@@ -24,7 +24,7 @@ def tuple_representer(dumper, data):
 yaml.add_constructor('tag:yaml.org,2002:python/tuple', tuple_constructor)
 yaml.add_representer(tuple, tuple_representer)
 
-cmap_head_template_parm_file = "/home/gridsan/ywang3/Project/Capping/Benchmarking/canonical_RNA_simulation/2koc/top_parna/test.2.parm7"
+cmap_head_template_parm_file = "template.parm7"
 cmap_tmpl_mol = parmed.load_file(cmap_head_template_parm_file)
 
 def interpolate_2d_griddata(X, Y, Z, resolution):
