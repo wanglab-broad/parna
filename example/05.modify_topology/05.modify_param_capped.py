@@ -25,7 +25,7 @@ def tuple_representer(dumper, data):
 yaml.add_constructor('tag:yaml.org,2002:python/tuple', tuple_constructor)
 yaml.add_representer(tuple, tuple_representer)
 
-cmap_head_template_parm_file = "/home/gridsan/ywang3/Project/Capping/Benchmarking2/binding_pose/double_ome/top/complex.mod.parm7"
+cmap_head_template_parm_file = "template.parm7"
 cmap_tmpl_mol = parmed.load_file(cmap_head_template_parm_file)
 
 def smooth_grid(grid, sigma=1.0):
