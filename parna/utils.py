@@ -7,7 +7,10 @@ import parmed as pmd
 import numpy as np
 import yaml
 import random
-import openfe
+try:
+    import openfe
+except ModuleNotFoundError:
+    openfe = None
 from parna.constant import ATOMIC_NUMBERS
 from parna.atom_mapper import FuzzyElementCompareAtoms, CompareChiralElements
 
