@@ -6,3 +6,5 @@ python 02.build_oligo.py --oligo $oligo_pdb_complex \
                          --keep-hydrogen
 
 ```
+
+Please modify the data folder path such as `lib` in the script. To use a parameterized `lib`, please download the files from Zenodo deposite.
