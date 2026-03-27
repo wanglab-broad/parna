@@ -50,10 +50,30 @@ PARNA is a parameterization workflow for nucleotides and their derivatives.
 <!-- GETTING STARTED -->
 ## Getting Started
 
-### Installation
+### Setup environment
 ```
-python setup.py install
+mamba create -n mdtools \
+    MDAnalysis openmm cudatoolkit==11.8.0 mdtraj ambertools \
+    parmed rdkit psi4 Jupyter matplotlib "numpy<2" scipy \
+    scikit-learn openmmtools pytorch-cuda pytorch biopython python=3.11 \
+    -c conda-forge -c pytorch -c nvidia -y
+source activate mdtools
+# install xtb
+mamba install xtb -c conda-forge
+PATH="xxx/xtb-IFF:$PATH"
+ulimit -s unlimited
+export OMP_STACKSIZE=3G
+export OMP_NUM_THREADS=48,1
+
+# install multiwfn
+# then setup env var for multiwfn
+ulimit -s unlimited
+export OMP_STACKSIZE=200M
+export DISPLAY=":0"
+export Multiwfnpath=xxx/Multiwfn_3.8_dev_bin_Linux_noGUI
+export PATH=$PATH:$Multiwfnpath
 ```
+
 
 <!-- USAGE EXAMPLES -->
 ## Usage
