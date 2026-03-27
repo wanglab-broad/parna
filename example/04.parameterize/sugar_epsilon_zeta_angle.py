@@ -39,7 +39,7 @@ if __name__ == "__main__":
         zeta_grids= zeta_grids,
         sugar_grids= sugar_grids,
         train_epochs = 100,
-        pretrained_model_path = "/home/gridsan/ywang3/Project/Capping/test_parameterization/test_NNP/refining/aimnet2_wb97m_0.pth"
+        pretrained_model_path = "aimnet2_wb97m_0.pth"
     )
     tfactory.load_file(args.file, charge=0)
     tfactory.match_template()

@@ -1,5 +1,5 @@
 import sys
-sys.path.append("/home/gridsan/ywang3/Project/Capping/parna/")
+sys.path.append("../../")
 import parna
 import parna.construct as construct
 from parna.extract import extract_backbone

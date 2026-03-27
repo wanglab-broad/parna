@@ -1,3 +1,5 @@
+import sys
+sys.path.append("../../..")
 import parna
 import parna.resp as resp
 import parna.construct as construct

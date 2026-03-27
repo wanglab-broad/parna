@@ -1,3 +1,5 @@
+import sys
+sys.path.append("../..")
 import parna
 from parna.torsion.module import NonCanonicalTorsionFactory
 import argparse

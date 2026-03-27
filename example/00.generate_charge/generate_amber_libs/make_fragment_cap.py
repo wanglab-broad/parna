@@ -1,3 +1,6 @@
+import sys
+sys.path.append("../../..")
+
 import parna
 import parna.construct as construct
 from pathlib import Path

@@ -1,5 +1,7 @@
 # Generate chagre for non-canonical nucleotides
 
+This code helps generate atomic charges by the multi-conformer RESP2 scheme. Make sure you have `psi4` installed.
+
 This folder has two examples:
 - `cap` is the 5' cap structure (without the tri-phosphate group)
 - `locked_nucleotide` is a locked nucleotide.
@@ -21,3 +23,4 @@ Then to make the Amber compatibale `.lib` files, run:
 cd generate_amber_libs
 python make_fragement_<option>.py
 ```
+`.lib` files are used during simulation to load atomic charges.
